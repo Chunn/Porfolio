@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: $FONTFAMILY-BASIC;
+  color: $COLOR-UTILITY-TXT-BASE;
+  background-color: $COLOR-BG-MAIN;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  color: $COLOR-UTILITY-TXT-BTN;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+input,
+a {
+  cursor: pointer;
+  background: none;
+}
+
+input,
+button,
+select {
+  // stylelint-disable-next-line 4dd/aeonmoneysite-custom-rules
+  font-family: inherit;
+}
+
+[role='button'],
+button {
+  cursor: pointer;
+  @include hover {
+    opacity: 0.5 !important;
+  }
+}
+
+input {
+  // override sanitize.css definition to avoid weird behavior on Safari.
+  word-break: normal;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}

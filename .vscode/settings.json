@@ -1,0 +1,7 @@
+{
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "stylelint.useLocal": true,
+  "stylelint.autoFixOnSave": true
+}
